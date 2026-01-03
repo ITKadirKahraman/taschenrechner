@@ -24,6 +24,21 @@ h1{
     gap: 10px;
 }
 
+.calculatorField{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+input{
+    width: 40vw;
+    height: 5vh;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}
+
 .button{
     width: 86px;
     height: 86px;
