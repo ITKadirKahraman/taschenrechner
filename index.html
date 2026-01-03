@@ -4,42 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="img/calculator.svg">
+
     <title>Taschenrechner</title>
 </head>
 <body>
     <main>
         <section>
-            <div class="ebene one">
-                <button type="button" onclick="">←</button>
-                <button type="button" onclick="">AC</button>
-                <button type="button" onclick="">%</button>
-                <button type="button" onclick="">/</button>
+            <h1>Taschenrechner</h1>
+            <div class="calculatorField">
+                <input type="number" id="calculatorField">
             </div>
             <div class="ebene">
-                <button type="button" onclick="">7</button>
-                <button type="button" onclick="">8C</button>
-                <button type="button" onclick="">9</button>
-                <button type="button" onclick="">*</button>
+                <button class="button" type="button" onclick="">←</button>
+                <button class="button" type="button" onclick="">AC</button>
+                <button class="button" type="button" onclick="">%</button>
+                <button class="button" type="button" onclick="">/</button>
             </div>
             <div class="ebene">
-                <button type="button" onclick="">4</button>
-                <button type="button" onclick="">5</button>
-                <button type="button" onclick="">6</button>
-                <button type="button" onclick="">-</button>
+                <button class="button" type="button" onclick="">7</button>
+                <button class="button" type="button" onclick="">8</button>
+                <button class="button" type="button" onclick="">9</button>
+                <button class="button" type="button" onclick="">*</button>
             </div>
             <div class="ebene">
-                <button type="button" onclick="">1</button>
-                <button type="button" onclick="">2</button>
-                <button type="button" onclick="">3</button>
-                <button type="button" onclick="">+</button>
+                <button class="button" type="button" onclick="">4</button>
+                <button class="button" type="button" onclick="">5</button>
+                <button class="button" type="button" onclick="">6</button>
+                <button class="button" type="button" onclick="">-</button>
             </div>
             <div class="ebene">
-                <button type="button" onclick="">+/-</button>
-                <button type="button" onclick="">0</button>
-                <button type="button" onclick="">,</button>
-                <button type="button" onclick="">=</button>
+                <button class="button" type="button" onclick="">1</button>
+                <button class="button" type="button" onclick="">2</button>
+                <button class="button" type="button" onclick="">3</button>
+                <button class="button" type="button" onclick="">+</button>
+            </div>
+            <div class="ebene">
+                <button class="button" type="button" onclick="">+/-</button>
+                <button class="button" type="button" onclick="">0</button>
+                <button class="button" type="button" onclick="">,</button>
+                <button class="button" type="button" onclick="">=</button>
             </div>
         </section>
     </main>
+    <script src="calculator.js"></script>
 </body>
 </html>
