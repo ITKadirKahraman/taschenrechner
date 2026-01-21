@@ -1,18 +1,40 @@
+:root {
+    /* color */
+    --primary-color: #636B2F;
+    --second-color: rgb(0, 0, 128);
+    --text-color: white;
+    --field-color: black;
+
+    /* fonts */
+    --text-font: 'Courier New', Courier, monospace;
+
+    /* size */
+    --font-size: 48px;
+    --font-input-size: 30px;
+    --padding-top-size: 100px;
+    --padding-bottom-size: 20px;
+    --gap-size: 10px;
+    --btn-size: 86px;
+    --btn-radius-size: 50px;
+    --btn-radius-width: 5px;
+    --margin: 0;
+}
+
 body{
     padding: auto;
-    background-color: #636B2F;
+    background-color: var(--primary-color);
 }
 
 h1{
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 48px;
+    color: var(--text-color);
+    font-family: var(--text-font);
+    font-size: var(--font-size);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 20px;
-    margin: 0;
+    padding-top: var(--padding-top-size);
+    padding-bottom: var(--padding-bottom-size);
+    margin: var(--margin);
 }
 
 .ebene {
@@ -21,36 +43,36 @@ h1{
     align-items: center;
     flex-direction: row;
     padding: 0 100px 0 100px;
-    gap: 10px;
+    gap: var(--gap-size);
 }
 
 .calculatorField{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: var(--padding-bottom-size);
 }
 
 input{
     width: 40vw;
     height: 5vh;
-    background-color: black;
-    color: white;
-    font-size: 30px;
+    background-color: var(--field-color);
+    color: var(--text-color);
+    font-size: var(--font-input-size);
 }
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
-    margin: 0;
+    margin: var(--margin);
 }
 
-.button{
-    width: 86px;
-    height: 86px;
-    border-radius: 50px;
-    background-color: rgb(0, 0, 128);
-    border-color: rgb(0, 0, 128);
-    border-width: 5px;
-    font-size: 48px;
+.btn{
+    width: var(--btn-size);
+    height: var(--btn-size);
+    border-radius: var(--btn-radius-size);
+    background-color: var(--second-color);
+    border-color: var(--second-color);
+    border-width: var(--btn-radius-width);
+    font-size: var(--font-size);
 }
