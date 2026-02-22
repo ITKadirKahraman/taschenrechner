@@ -1,9 +1,9 @@
 :root {
     /* color */
-    --primary-color: #636B2F;
-    --second-color: rgb(0, 0, 128);
-    --text-color: white;
-    --field-color: black;
+    --primary-color: #004E64;
+    --second-color: #00CEC9;
+    --text-color: #F5F6FA;
+    --field-color: #00CEC9;
 
     /* fonts */
     --text-font: 'Courier New', Courier, monospace;
