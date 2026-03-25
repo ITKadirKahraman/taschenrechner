@@ -1,0 +1,35 @@
+:root {
+    --background-color: #E0E5E9;
+}
+
+body {
+    background-image: linear-gradient(-45deg, #6C5CE7, #004E64, #FCFBFB);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0%{
+        background-position: 100% 0%;
+    }
+}
+
+.calculator {
+    border: solid;
+    border-radius: 15px;
+    background-color: var(--background-color);
+}
+
+.calculatorField {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ebene {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
