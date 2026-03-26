@@ -1,80 +1,40 @@
 :root {
-    --background-color: #1A1A1A;
+    /* color */
+    --primary-color: #004E64;
+    --second-color: #00CEC9;
+    --text-color: #F5F6FA;
+    --field-color: #00CEC9;
 
-    --size15px: 15px;
-    --size50P: 50%;
-    --size50PM: -50%;
-    --size45vh: 45vh;
-    --size25vw: 25vw;
+    /* fonts */
+    --text-font: 'Courier New', Courier, monospace;
+
+    /* size */
+    --font-size: 48px;
+    --font-input-size: 30px;
+    --padding-top-size: 100px;
+    --padding-bottom-size: 20px;
+    --gap-size: 10px;
+    --btn-size: 86px;
+    --btn-radius-size: 50px;
+    --btn-radius-width: 5px;
+    --margin: 0;
 }
 
-body {
-    background-image: linear-gradient(-45deg, #6C5CE7, #004E64, #FCFBFB);
-    background-size: 400% 20%;
-    animation: gradient 15s ease infinite;
+body{
+    padding: auto;
+    background-color: var(--primary-color);
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 0%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-ul {
-    list-style-type: none;
-}
-
-.websiteIcon {
-    width: 48px;
-    height: 48px;
-}
-
-.headline {
-    margin: 0;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(var(--size50PM), var(--size50PM));
-}
-
-.calculator {
-    border: solid;
-    position: absolute; 
-    background-color: var(--background-color);
-    border-radius: var(--size15px);
-    top: var(--size50P);
-    left: var(--size50P);
-    transform: translate(var(--size50PM), var(--size50PM));
-    height: var(--size45vh);
-    width: var(--size25vw);
-}
-
-.calculatorField {
+h1{
+    color: var(--text-color);
+    font-family: var(--text-font);
+    font-size: var(--font-size);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin-top: 5px;
-}
-
-.inputField {
-    width: 22vw;
-    height: 4vh;
-    border-radius: 10px;
-    font-size: 20px;
-    background-color: #3a3a4f;
-    color: #b0b0c3;
-}
-
-.ergebnis {
-    background-color: #50E3C2;
-    color: #1e1e2f;
+    padding-top: var(--padding-top-size);
+    padding-bottom: var(--padding-bottom-size);
+    margin: var(--margin);
 }
 
 .ebene {
@@ -82,24 +42,37 @@ ul {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    padding: 0 100px 0 100px;
+    gap: var(--gap-size);
 }
 
-.btn {
-    width: 5.5vw;
-    height: 4vh;
-    margin-top: 10px;
-    border-radius: 50px;
-    background-color: #50E3C2;
+.calculatorField{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: var(--padding-bottom-size);
 }
 
-.operator {
-    background-color: #ff9500;
+input{
+    width: 40vw;
+    height: 5vh;
+    background-color: var(--field-color);
+    color: var(--text-color);
+    font-size: var(--font-input-size);
 }
 
-.icon {
-    width: 5.5vw;
-    height: 7vh;
-    margin-top: 10px;
-    border-radius: 15px;
-    background-color: #F0BD75;
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: var(--margin);
+}
+
+.btn{
+    width: var(--btn-size);
+    height: var(--btn-size);
+    border-radius: var(--btn-radius-size);
+    background-color: var(--second-color);
+    border-color: var(--second-color);
+    border-width: var(--btn-radius-width);
+    font-size: var(--font-size);
 }
