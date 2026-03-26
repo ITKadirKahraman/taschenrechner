@@ -1,23 +1,58 @@
 :root {
-    --background-color: #E0E5E9;
+    --background-color: #1A1A1A;
+
+    --size15px: 15px;
+    --size50P: 50%;
+    --size50PM: -50%;
+    --size45vh: 45vh;
+    --size25vw: 25vw;
 }
 
 body {
     background-image: linear-gradient(-45deg, #6C5CE7, #004E64, #FCFBFB);
-    background-size: 400% 400%;
+    background-size: 400% 20%;
     animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
-    0%{
-        background-position: 100% 0%;
-    }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 0%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+ul {
+    list-style-type: none;
+}
+
+.websiteIcon {
+    width: 48px;
+    height: 48px;
+}
+
+.headline {
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(var(--size50PM), var(--size50PM));
 }
 
 .calculator {
     border: solid;
-    border-radius: 15px;
+    position: absolute; 
     background-color: var(--background-color);
+    border-radius: var(--size15px);
+    top: var(--size50P);
+    left: var(--size50P);
+    transform: translate(var(--size50PM), var(--size50PM));
+    height: var(--size45vh);
+    width: var(--size25vw);
 }
 
 .calculatorField {
@@ -25,6 +60,21 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 5px;
+}
+
+.inputField {
+    width: 22vw;
+    height: 4vh;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #3a3a4f;
+    color: #b0b0c3;
+}
+
+.ergebnis {
+    background-color: #50E3C2;
+    color: #1e1e2f;
 }
 
 .ebene {
@@ -32,4 +82,24 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+}
+
+.btn {
+    width: 5.5vw;
+    height: 4vh;
+    margin-top: 10px;
+    border-radius: 50px;
+    background-color: #50E3C2;
+}
+
+.operator {
+    background-color: #ff9500;
+}
+
+.icon {
+    width: 5.5vw;
+    height: 7vh;
+    margin-top: 10px;
+    border-radius: 15px;
+    background-color: #F0BD75;
 }
