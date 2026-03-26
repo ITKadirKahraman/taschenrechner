@@ -8,42 +8,53 @@
     <title>Calculator</title>
 </head>
 <body>
-    <header><h1 class="headline">calculator</h1></header>
+    <header>
+        <ul>
+            <li><a href="www.kadirkahraman.de"><img class="websiteIcon" src="house.svg" alt="House"></a></li>
+        </ul>
+        <h1 class="headline">calculator, weather <br> currency converter, <br> calendar & location</h1>
+    </header>
     <main>
         <div class="calculator">
             <div class="calculatorField" id="calcuField">
-                <input type="text" id="calculationWay" placeholder="Rechnungsweg">
-                <input type="text" id="result" placeholder="Ergebnis">
+                <input class="inputField" type="text" id="calculationWay" placeholder="Rechnungsweg">
+                <input class="inputField ergebnis" type="text" id="result" placeholder="Ergebnis">
             </div>
             <div class="ebene">
-                <button class="btn" type="button" data-value="←">←</button>
-                <button class="btn" type="button" data-value="AC">AC</button>
-                <button class="btn" type="button" data-value="%">%</button>
-                <button class="btn" type="button" data-value="÷">÷</button>
+                <button class="btn operator" type="button" data-value="←">←</button>
+                <button class="btn operator" type="button" data-value="AC">AC</button>
+                <button class="btn operator" type="button" data-value="%">%</button>
+                <button class="btn operator" type="button" data-value="÷">÷</button>
             </div>
             <div class="ebene">
                 <button class="btn" type="button" data-value="7">7</button>
                 <button class="btn" type="button" data-value="8">8</button>
                 <button class="btn" type="button" data-value="9">9</button>
-                <button class="btn" type="button" data-value="x">x</button>
+                <button class="btn operator" type="button" data-value="x">x</button>
             </div>
             <div class="ebene">
                 <button class="btn" type="button" data-value="4">4</button>
                 <button class="btn" type="button" data-value="5">5</button>
                 <button class="btn" type="button" data-value="6">6</button>
-                <button class="btn" type="button" data-value="-">-</button>
+                <button class="btn operator" type="button" data-value="-">-</button>
             </div>
             <div class="ebene">
                 <button class="btn" type="button" data-value="1">1</button>
                 <button class="btn" type="button" data-value="2">2</button>
                 <button class="btn" type="button" data-value="3">3</button>
-                <button class="btn" type="button" data-value="+">+</button>
+                <button class="btn operator" type="button" data-value="+">+</button>
             </div>
             <div class="ebene">
-                <button class="btn" type="button" data-value="?">?</button>
+                <button class="btn operator" type="button" data-value="?">?</button>
                 <button class="btn" type="button" data-value="0">0</button>
-                <button class="btn" type="button" data-value=",">,</button>
-                <button class="btn" type="button" data-value="=">=</button>
+                <button class="btn operator" type="button" data-value=",">,</button>
+                <button class="btn operator" type="button" data-value="=">=</button>
+            </div>
+            <div class="ebene">
+                <button class="icon" type="button"><img src="calendar.svg" alt="calendar"></button>
+                <button class="icon" type="button"><img src="euro.svg" alt="euro"></button>
+                <button class="icon" type="button"><img src="cloudBolt.svg" alt="cloud and bolt"></button>
+                <button class="icon" type="button"><img src="location.svg" alt="Location"></button>
             </div>
         </div>
     </main>
