@@ -145,8 +145,6 @@ Mit diesem Projekt wurden folgende Themen geübt:
 
 **Kadir Kahraman**
 
-Projekt im Rahmen des Lernprozesses bei der Developer Akademie erstellt.
-
 ---
 
 ## 🔗 GitHub
