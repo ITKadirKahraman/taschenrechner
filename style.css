@@ -1,0 +1,78 @@
+:root {
+    /* color */
+    --primary-color: #004E64;
+    --second-color: #00CEC9;
+    --text-color: #F5F6FA;
+    --field-color: #00CEC9;
+
+    /* fonts */
+    --text-font: 'Courier New', Courier, monospace;
+
+    /* size */
+    --font-size: 48px;
+    --font-input-size: 30px;
+    --padding-top-size: 100px;
+    --padding-bottom-size: 20px;
+    --gap-size: 10px;
+    --btn-size: 86px;
+    --btn-radius-size: 50px;
+    --btn-radius-width: 5px;
+    --margin: 0;
+}
+
+body{
+    padding: auto;
+    background-color: var(--primary-color);
+}
+
+h1{
+    color: var(--text-color);
+    font-family: var(--text-font);
+    font-size: var(--font-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: var(--padding-top-size);
+    padding-bottom: var(--padding-bottom-size);
+    margin: var(--margin);
+}
+
+.ebene {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 100px 0 100px;
+    gap: var(--gap-size);
+}
+
+.calculatorField{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: var(--padding-bottom-size);
+}
+
+input{
+    width: 40vw;
+    height: 5vh;
+    background-color: var(--field-color);
+    color: var(--text-color);
+    font-size: var(--font-input-size);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: var(--margin);
+}
+
+.btn{
+    width: var(--btn-size);
+    height: var(--btn-size);
+    border-radius: var(--btn-radius-size);
+    background-color: var(--second-color);
+    border-color: var(--second-color);
+    border-width: var(--btn-radius-width);
+    font-size: var(--font-size);
+}
